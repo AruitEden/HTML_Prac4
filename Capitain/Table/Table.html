@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../Nav_Menu.css" type="text/css" />
+    <link rel="stylesheet" href="Table_Css.css" type="text/css" />
+
+    <title>Морські подорожі</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="nav">
+        <div class="Logo">
+          <img src="../../Logo.png" alt="Logo" width="60px" />
+        </div>
+
+        <nav>
+          <ul>
+            <li name="1"><a href="../Main/Main.html#1">Головна</a></li>
+            <li name="2">
+              <a href="#">Лайнери</a>
+              <ul>
+                <li>
+                  <a href="../Liner/Costa Diadema.html#2">Costa Diadema</a>
+                </li>
+                <li><a href="../Liner/MSC Euribia.html#2">MSC Euribia</a></li>
+                <li><a href="../Liner/MSC Divina 5.html#2">MSC Divina 5</a></li>
+              </ul>
+            </li>
+            <li name="3">
+              <a href="../Cruis/Cruise.html#3">Обрати круїз</a>
+            </li>
+            <li name="4"><a href="Table.html#4" class="active">Розклад</a></li>
+            <li name="5"><a href="../Comments/Comment.html#5">Відгуки</a></li>
+            <li><a href="#">Нащі співробітники</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <table class="table" id="table">
+        <caption class="table_title">
+          Розклад
+        </caption>
+        <tr>
+          <th>Круїз</th>
+          <th>Лайнер</th>
+          <th>Дата</th>
+          <th>Капітан</th>
+          <th>Вартість</th>
+        </tr>
+      </table>
+
+      <div class="btn">
+        <button class="form_btn" id="sub">Додати круїз</button>
+      </div>
+    </div>
+
+    <script src="Table_Js.js"></script>
+  </body>
+</html>

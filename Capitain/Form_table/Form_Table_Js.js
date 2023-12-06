@@ -112,3 +112,9 @@ form.addEventListener("submit", function (event) {
     form.reset();
   }
 });
+
+//Закрыть форму
+
+document.getElementById("close").onclick = function () {
+  window.location.href = "../Table/Table.html#4";
+};

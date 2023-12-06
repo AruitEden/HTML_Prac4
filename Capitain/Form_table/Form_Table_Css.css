@@ -56,7 +56,7 @@ body {
 
 .cinteiner {
   width: 400px;
-  height: 550px;
+  height: 590px;
   padding: 40px 0;
   position: relative;
 
@@ -100,7 +100,7 @@ body {
 .form_input {
   width: 100%;
 
-  margin-top: 10px;
+  margin-top: 15px;
 
   padding: 10px;
   border: solid 1px #333;
@@ -108,7 +108,7 @@ body {
 }
 
 .form_btn {
-  margin-top: 20px;
+  margin-top: 15px;
 
   border: none;
   cursor: pointer;
@@ -128,7 +128,7 @@ textarea {
   border: solid 1px #333;
   font-size: inherit;
 
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 input::-webkit-outer-spin-button,
@@ -149,4 +149,30 @@ h4 {
 
 .error {
   border-color: red;
+}
+
+.form_btn_close {
+  text-align: right;
+
+  margin-top: 5px;
+
+  width: 30px;
+  height: 30px;
+
+  text-align: center;
+
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: white;
+  color: cadetblue;
+  padding: 5px;
+
+  border: 1px solid cadetblue;
+  border-radius: 60px;
+}
+
+.close {
+  position: relative;
+  left: 50%;
 }
