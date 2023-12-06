@@ -1,0 +1,188 @@
+/*body {
+  background: url(could.jpg) no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: #5f9ea0;
+}
+
+.nav a {
+  float: left;
+  color: #fff5ee;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav img {
+  vertical-align: middle;
+}
+.nav a:hover {
+  background-color: #008080;
+  color: white;
+}
+
+.nav a.active {
+  background-color: #2f4f4f;
+  color: #fff5ee;
+}
+
+.borderD {
+  border: 7px;
+  border-style: dashed double;
+  border-color: #4682b4;
+  box-shadow: 0 0 10px rgba(41, 62, 220, 0.521);
+}
+
+.borderS {
+  margin: 10px 10px;
+  border: 3px;
+  border-style: solid;
+  border-color: #191970;
+}
+
+.text_center {
+  text-align: center;
+  color: #1d2c2c;
+  font-family: Georgia;
+}
+
+.blok1 {
+  text-align: center;
+  background-color: #b0c4de;
+  font-family: Georgia;
+  color: #ffffff;
+}*/
+
+* {
+  margin: 0; /*Зовнішні та внутрішні поля 0*/
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none; /*Без маркерів*/
+  text-decoration: none; /*Без підкреслювань*/
+}
+
+body {
+  height: 100vh;
+  background: url(https://bogatyr.club/uploads/posts/2023-03/thumbs/1679473029_bogatyr-club-p-zelenie-tuchi-foni-pinterest-3.jpg)
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*Навигационная панель*/
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #5f9ea0;
+  display: flex;
+
+  align-items: center;
+  padding: 0 3%;
+  box-shadow: 0 5px 10px #346e70;
+}
+
+.nav img {
+  vertical-align: middle;
+}
+
+.nav ul li {
+  position: relative;
+  float: left;
+}
+
+.nav ul li a {
+  padding: 15px;
+  color: #ffffff;
+  font-size: 16px;
+  display: block;
+  transition-delay: 0.05s;
+}
+
+.nav ul li a:hover {
+  background-color: #346e70;
+  transform: scale(1.1);
+}
+
+.nav ul li a.active {
+  background-color: #346e70;
+}
+
+/*Выпадающтй список*/
+nav ul li ul {
+  position: absolute;
+  left: 0;
+  width: 160px;
+  background-color: #5f9ea0;
+  z-index: 1;
+  display: none;
+}
+
+nav ul li ul li {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover > ul {
+  display: inline;
+}
+
+/*Футер*/
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #346e70bd;
+
+  color: white;
+
+  margin-top: 40px;
+  padding-top: 15px;
+}
+
+.footers {
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px;
+}
+
+.fot-right,
+.fot-left {
+  flex-basis: 35%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.fot-center {
+  position: absolute;
+  top: 820px;
+}
+
+.fot-center img {
+  width: 100%;
+  height: 100px;
+}
+
+.fot-right {
+  text-align: right;
+}
+
+.footers h2 {
+  margin: 10px 0;
+}
+
+.footers P {
+  line-height: 20px;
+}
+
+.fas {
+  font-size: 17px;
+  margin-right: 5px;
+}

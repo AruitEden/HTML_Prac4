@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Nav_Menu.css" type="text/css" />
+    <link rel="stylesheet" href="Form_Table_Css.css" type="text/css" />
+
+    <title>Морські подорожі</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="nav">
+        <div class="Logo">
+          <img src="Logo.png" alt="Logo" width="60px" />
+        </div>
+
+        <nav>
+          <ul>
+            <li name="1"><a href="Main.html#1">Головна</a></li>
+            <li name="2">
+              <a href="#">Лайнери</a>
+              <ul>
+                <li><a href="Costa Diadema.html#2">Costa Diadema</a></li>
+                <li><a href="MSC Euribia.html#2">MSC Euribia</a></li>
+                <li><a href="MSC Divina 5.html#2">MSC Divina 5</a></li>
+              </ul>
+            </li>
+            <li name="3">
+              <a href="Cruise.html#3">Обрати круїз</a>
+            </li>
+            <li name="4"><a href="Table.html#4">Розклад</a></li>
+            <li><a href="Comment.html#5">Відгуки</a></li>
+            <li><a href="#">Нащі співробітники</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="cinteiner">
+      <div class="form-box">
+        <form action="" id="form1" class="form" onsubmit="false">
+          <h3 class="form_title">Додати круїз:</h3>
+          <p id="name_cruis" class="form_title"></p>
+
+          <select id="cruis" class="form_select">
+            <option value="CRUISE BARCELONI" selected>КРУЇЗ З БАРСЕЛОНИ</option>
+            <option value="ANTARCTIC">АНТАРКТИКА</option>
+            <option value="YACHT CRUISE">КРУЇЗ НА ЯХТІ</option>
+          </select>
+
+          <select id="liner" class="form_select">
+            <option value="Costa Diadema" selected>Costa Diadema</option>
+            <option value="MSC Euribia">MSC Euribia</option>
+            <option value="MSC Divina 5">MSC Divina 5</option>
+          </select>
+
+          <p id="data-parent">
+            <input
+              placeholder="Дата відплиття"
+              type="text"
+              onfocus="this.type = 'date'"
+              onblur="if(this.value==''){this.type='text'}"
+              name="Date"
+              id="data"
+              class="form_input"
+            />
+          </p>
+
+          <p id="count-parent">
+            <input
+              type="number"
+              id="count"
+              name="count"
+              ;
+              class="form_input"
+              pattern="[0-9]{ ,6300}"
+              required
+              placeholder="Кількість учасників"
+            />
+          </p>
+
+          <p class="form_input">
+            <label
+              ><input type="radio" id="r1" name="Day" value="8-9" checked /> 9
+              днів та 8 ночей</label
+            >
+            <br />
+            <label
+              ><input type="radio" id="r2" name="Day" value="5-6" /> 6 днів та 5
+              ночей</label
+            >
+            <br />
+            <label
+              ><input type="radio" id="r3" name="Day" value="3-4" /> 4 днів та 3
+              ночі</label
+            >
+          </p>
+
+          <h4>Ціна</h4>
+          <p>
+            <input
+              min="6000"
+              max="60000"
+              step="100"
+              name="cost"
+              type="range"
+              id="cost"
+              class="form_input"
+            />
+          </p>
+          <div id="cos"></div>
+
+          <p>
+            <button type="submit" class="form_btn" id="sub">Додати</button>
+          </p>
+          <p>
+            <button type="reset" class="form_btn">Очистити форму</button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="Form_Table_Js.js"></script>
+  </body>
+</html>

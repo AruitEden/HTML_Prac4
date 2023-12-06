@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cinteiner {
+  width: 800px;
+  height: 500px;
+  padding: 40px 0;
+  position: relative;
+
+  background-color: cadetblue;
+}
+
+.block {
+  height: 100%;
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: 0 5px 45px rgb(0, 0, 0, 0.2);
+
+  display: flex;
+  align-items: center;
+}
+
+.block_item {
+  width: 50%;
+}
+
+.block-item {
+  text-align: center;
+}
+
+.block-item_title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.block-item_btn {
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: white;
+  color: darkslategray;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.form-box {
+  background-color: white;
+  height: 100%;
+  width: 50%;
+  box-shadow: 0 5px 45px rgb(0, 0, 0, 0.25);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+
+  transition: 0.5s ease-in-out;
+
+  overflow: hidden;
+}
+
+.form-box.active {
+  left: 50%;
+}
+
+.form-box.active .form_singin {
+  left: -100%;
+  transition-delay: 0s;
+}
+
+.form-box.active .form_singup {
+  left: 0;
+  transition-delay: 0.25s;
+}
+
+.form {
+  width: 100%;
+  padding: 50px;
+  font-size: 16px;
+
+  position: absolute;
+  transition: 0.5s;
+}
+
+.form_singin {
+  left: 0;
+  transition-delay: 0.25s;
+}
+
+.form_singup {
+  left: 100%;
+  transition-delay: 0s;
+}
+
+.form_title,
+.form_input,
+.form_btn,
+.form_select {
+  margin: 10px;
+}
+
+.form_title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.form_input {
+  width: 100%;
+  padding: 10px;
+  border: solid 1px #333;
+  font-size: inherit;
+}
+
+.form_btn {
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  background-color: cadetblue;
+  color: white;
+  padding: 10px 50px;
+}
+
+.form_select {
+  width: 100%;
+  padding: 10px;
+  border: solid 1px #333;
+  font-size: inherit;
+}
+
+#blok_check {
+  transition: 1s;
+}

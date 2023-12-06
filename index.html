@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Nav_Menu.css" type="text/css" />
+    <link rel="stylesheet" href="Index_Css.css" type="text/css" />
+    <title>Морські подорожі</title>
+  </head>
+  <body>
+    <article class="cinteiner">
+      <div class="block">
+        <section class="block_item block-item">
+          <h2 class="block-item_title">У вас є аккаунт?</h2>
+          <button class="block-item_btn singin-btn">Увійти</button>
+        </section>
+        <section class="block_item block-item">
+          <h2 class="block-item_title">У вас не має аккаунту?</h2>
+          <button class="block-item_btn singup-btn">Зареєструватися</button>
+        </section>
+      </div>
+
+      <div class="form-box">
+        <form action="" id="form1" class="form form_singin">
+          <h3 class="form_title">Вхід</h3>
+          <p>
+            <input
+              type="text"
+              id="log"
+              name="login1"
+              class="form_input"
+              pattern="[A-Za-z0-9.@]{5,30}"
+              required
+              placeholder="Логін"
+            />
+          </p>
+          <p>
+            <input
+              type="password"
+              id="pas"
+              name="password1"
+              ;
+              class="form_input"
+              pattern="[A-Za-z0-9!@#$%^&*]{5,}"
+              required
+              placeholder="Пароль"
+            />
+          </p>
+          <p>
+            <button type="submit" class="form_btn" id="sub">Увійти</button>
+          </p>
+          <p>
+            <button type="reset" class="form_btn">Очистити форму</button>
+          </p>
+        </form>
+
+        <form action="" id="form2" class="form form_singup">
+          <h3 class="form_title">Реєстрація</h3>
+          <p>
+            <input
+              type="text"
+              class="form_input"
+              id="login_input"
+              pattern="[A-Za-z0-9.@]{5,30}"
+              required
+              placeholder="Логін"
+            />
+          </p>
+          <p>
+            <input
+              type="text"
+              class="form_input"
+              id="password_input"
+              pattern="[A-Za-z0-9!@#$%^&*]{6,}"
+              required
+              placeholder="Пароль"
+            />
+          </p>
+
+          <p>
+            <input
+              type="text"
+              class="form_input"
+              id="name_input"
+              pattern="[A-Za-z0-9]{1,30}"
+              required
+              placeholder="Ім'я Прізвище"
+            />
+          </p>
+
+          <select id="sex_input" class="form_select">
+            <option value="user" selected>Користувач</option>
+            <option value="capitain">Капітан</option>
+            <option value="admin">Адміністратор</option>
+          </select>
+          <p>
+            <input
+              type="tel"
+              class="form_input"
+              id="number_input"
+              pattern="[0-9]{1,10}"
+              required
+              placeholder="Номер телефона"
+            />
+          </p>
+          <p>
+            <button class="form_btn" type="submit" id="sub_input">
+              Зареєструватися
+            </button>
+          </p>
+          <p>
+            <button type="reset" id="reset" class="form_btn">
+              Очистити форму
+            </button>
+          </p>
+        </form>
+      </div>
+    </article>
+
+    <script src="Index_Js.js"></script>
+  </body>
+</html>
