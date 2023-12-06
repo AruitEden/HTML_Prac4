@@ -193,15 +193,15 @@ function FoundUser() {
         console.log(true);
 
         if (users2[i].role == "user") {
-          window.location.href = "Main.html#1";
+          window.location.href = "./User/Main/Main.html#1";
         }
 
         if (users2[i].role == "capitain") {
-          window.location.href = "Cruise.html#3";
+          window.location.href = "./Capitain/Form_table/Form_Table.html";
         }
 
         if (users2[i].role == "admin") {
-          window.location.href = "Table.html#4";
+          window.location.href = "./User/Table/Table.html#4";
         }
 
         form1.reset();
