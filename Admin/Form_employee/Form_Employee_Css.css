@@ -9,15 +9,23 @@
   padding: 10px 50px;
 }
 
-.button {
+h1 {
   position: absolute;
-  top: 50%;
-  left: 45%;
 
-  margin-top: 10px;
+  top: 80px;
+  left: 47%;
+
+  margin: 20px;
+
+  font-family: Luminari, fantasy;
+  font-weight: normal;
+
+  color: #275355;
 }
 
-.modal {
+.modal,
+.modal2,
+.modal3 {
   position: fixed;
   top: 0;
   left: 0;
@@ -87,6 +95,7 @@
 }
 
 /*Form*/
+
 .form {
   width: 100%;
   padding: 30px;
@@ -151,4 +160,48 @@ label {
 
 .error {
   border-color: red;
+}
+
+/*Cards*/
+
+.cont {
+  max-width: 1100px;
+  min-height: 350px;
+
+  text-align: center;
+
+  margin: 200px auto;
+}
+
+.cont_style {
+  background-color: rgba(255, 255, 255, 0.49);
+  border-radius: 10px;
+}
+
+.card {
+  display: inline-block;
+
+  width: 280px;
+  height: 280px;
+
+  margin: 40px 20px 40px 20px;
+
+  border-radius: 10px;
+  background-color: white;
+}
+
+.img_card {
+  width: 100%;
+  height: 50%;
+}
+
+.img_card img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 10px;
+}
+
+.content {
+  margin: 20px;
 }

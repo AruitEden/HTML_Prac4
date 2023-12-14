@@ -131,3 +131,7 @@ label {
   padding: 10px;
   cursor: pointer;
 }
+
+.error {
+  border-color: red;
+}

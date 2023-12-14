@@ -7,7 +7,27 @@ document.getElementById("close").onclick = function () {
   document.querySelector(".modal").style.display = "none";
 };
 
-//Form
+/////////////////////////////////////
+
+document.getElementById("employee_f2").onclick = function () {
+  document.querySelector(".modal2").style.display = "flex";
+};
+
+document.getElementById("close2").onclick = function () {
+  document.querySelector(".modal2").style.display = "none";
+};
+
+/////////////////////////////////////
+
+document.getElementById("employee_f3").onclick = function () {
+  document.querySelector(".modal3").style.display = "flex";
+};
+
+document.getElementById("close3").onclick = function () {
+  document.querySelector(".modal3").style.display = "none";
+};
+
+//Form 1
 
 const userUrl = document.getElementById("url");
 const useName = document.getElementById("name");
@@ -71,6 +91,61 @@ form.addEventListener("submit", function (event) {
     );
 
     localStorage.setItem("CoolUsers", JSON.stringify(users));
+
     form.reset();
   }
+});
+
+// Form 2
+
+//localStorage.removeItem("Video");
+//localStorage.setItem("Video", "");
+
+class NewVideo {
+  constructor(url, name) {
+    this.url = url;
+    this.name = name;
+  }
+}
+
+const Name = document.getElementById("name_video");
+const Url = document.getElementById("url_v");
+
+const form2 = document.getElementById("my_form2");
+
+form2.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  let video = new NewVideo(Url.value, Name.value);
+
+  localStorage.setItem("Video", JSON.stringify(video));
+
+  form2.reset();
+});
+
+// Form 3
+
+//localStorage.removeItem("News");
+//localStorage.setItem("News", "");
+
+class NewNews {
+  constructor(text, name) {
+    this.text = text;
+    this.name = name;
+  }
+}
+
+const Name_t = document.getElementById("name_n");
+const Txet_t = document.getElementById("comment");
+
+const form3 = document.getElementById("my_form3");
+
+form3.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  let news = new NewNews(Txet_t.value, Name_t.value);
+
+  localStorage.setItem("News", JSON.stringify(news));
+
+  form3.reset();
 });

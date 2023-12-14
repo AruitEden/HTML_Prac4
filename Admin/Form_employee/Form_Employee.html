@@ -19,28 +19,54 @@
 
         <nav>
           <ul>
-            <li name="1"><a href="Main.html#1">Головна</a></li>
-            <li>
-              <a href="#">Лайнери</a>
-              <ul>
-                <li><a href="Costa Diadema.html#2">Costa Diadema</a></li>
-                <li><a href="MSC Euribia.html#2">MSC Euribia</a></li>
-                <li><a href="#">MSC Divina 5</a></li>
-              </ul>
+            <li name="1"><a href="Form_Employee.html">Головна</a></li>
+            <li name="4">
+              <a href="../Table_User/Table_user.html">Таблиця користувачів</a>
             </li>
-            <li name="3">
-              <a href="Cruise.html #3" class="active">Обрати круїз</a>
-            </li>
-            <li name="4"><a href="Table.html#4">Розклад</a></li>
-            <li><a href="Comment.html#5">Відгуки</a></li>
-            <li><a href="#">Нащі співробітники</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <div class="button">
-      <button id="employee_f" class="btn">Form</button>
+    <h1>Дії</h1>
+
+    <div class="cont cont_style">
+      <div class="card">
+        <div class="img_card">
+          <img
+            src="https://st2.depositphotos.com/1167801/10214/i/600/depositphotos_102141642-stock-photo-five-star-rating-shiny-golden.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <p class="title_text">Додати кращого робітника</p>
+          <button id="employee_f" class="btn">Додати</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img_card">
+          <img
+            src="https://detector.media/doc/images/news/archive/2016/170925/i75_ArticleImage_170925.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <p class="title_text">Змінити відео</p>
+          <button id="employee_f2" class="btn">Змінити</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img_card">
+          <img
+            src="https://scontent.fiev9-1.fna.fbcdn.net/v/t39.30808-6/281631716_1073078786898620_6269198945566803651_n.png?_nc_cat=101&ccb=1-7&_nc_sid=783fdb&_nc_ohc=WWnyXcdvQdIAX-jAr0Z&_nc_ht=scontent.fiev9-1.fna&oh=00_AfAS0wZedBCD7wyg7tOOPc-fSP2R0R_PezfQdYMBYK5BiA&oe=657E3D50"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <p class="title_text">Змінити новину</p>
+          <button id="employee_f3" class="btn">Змінити</button>
+        </div>
+      </div>
     </div>
 
     <div class="modal">
@@ -48,15 +74,15 @@
         <form id="my_form" class="form form_singup">
           <h3 class="form_title">Додати кращого співробітника</h3>
           <p>
-            <label for="url">URL фота співробітника</label>
+            <label>URL фота співробітника</label>
             <input
-              type="url"
+              type="text"
               class="form_input"
               name="url"
               id="url"
               pattern="https://.*"
               required
-              placeholder="https://photo.png"
+              placeholder="https://video"
             />
           </p>
 
@@ -108,16 +134,102 @@
             </button>
           </p>
           <p>
-            <button type="reset" id="reset" class="form_btn">
+            <button type="reset" id="res" class="form_btn">
               Очистити форму
             </button>
           </p>
         </form>
+
         <button id="close" class="btn-close">X</button>
+      </div>
+      <div class="overlay"></div>
+    </div>
+
+    <div class="modal2">
+      <div class="modal_window">
+        <form id="my_form2" class="form form_singup">
+          <h3 class="form_title">Додати кращого співробітника</h3>
+          <p>
+            <input
+              type="text"
+              class="form_input"
+              id="name_video"
+              pattern="[A-Za-zА-Яа-я\s]{1,30}"
+              required
+              placeholder="Заголовок до відео"
+            />
+          </p>
+
+          <p>
+            <label>URL відео</label>
+            <input
+              type="text"
+              class="form_input"
+              name="url_v"
+              id="url_v"
+              pattern="https://.*"
+              required
+              placeholder="https://photo.png"
+            />
+          </p>
+
+          <p>
+            <button class="form_btn" type="submit" id="sub2">Відправити</button>
+          </p>
+          <p>
+            <button type="reset" id="res2" class="form_btn">
+              Очистити форму
+            </button>
+          </p>
+        </form>
+        <button id="close2" class="btn-close">X</button>
       </div>
 
       <div class="overlay"></div>
     </div>
+
+    <div class="modal3">
+      <div class="modal_window">
+        <form id="my_form3" class="form form_singup">
+          <h3 class="form_title">Додати кращого співробітника</h3>
+          <p>
+            <input
+              type="text"
+              class="form_input"
+              id="name_n"
+              pattern="[A-Za-zА-Яа-я\s]{1,30}"
+              required
+              placeholder="Заголовок до новини"
+            />
+          </p>
+
+          <p>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="5"
+              rows="3"
+              class="form_input"
+              required
+              placeholder="Текст"
+            ></textarea>
+          </p>
+
+          <p>
+            <button class="form_btn" type="submit" id="sub3">Відправити</button>
+          </p>
+          <p>
+            <button type="reset" id="res3" class="form_btn">
+              Очистити форму
+            </button>
+          </p>
+        </form>
+        <button id="close3" class="btn-close">X</button>
+      </div>
+
+      <div class="overlay"></div>
+    </div>
+
     <script src="Form_Employee_Js.js"></script>
   </body>
 </html>

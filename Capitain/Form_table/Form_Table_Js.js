@@ -109,6 +109,7 @@ form.addEventListener("submit", function (event) {
     );
 
     localStorage.setItem("cruiseArray", JSON.stringify(cruises));
+
     form.reset();
   }
 });
