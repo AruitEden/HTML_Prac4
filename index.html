@@ -59,7 +59,7 @@
           <h3 class="form_title">Реєстрація</h3>
           <p>
             <input
-              type="text"
+              type="email"
               class="form_input"
               id="login_input"
               pattern="[A-Za-z0-9.@]{5,30}"
@@ -83,23 +83,18 @@
               type="text"
               class="form_input"
               id="name_input"
-              pattern="[A-Za-z0-9]{1,30}"
+              pattern="[A-Za-z0-9А-Яа-я\s\-]{1,30}"
               required
-              placeholder="Ім'я Прізвище"
+              placeholder="Ім'я"
             />
           </p>
 
-          <select id="sex_input" class="form_select">
-            <option value="user" selected>Користувач</option>
-            <option value="capitain">Капітан</option>
-            <option value="admin">Адміністратор</option>
-          </select>
           <p>
             <input
               type="tel"
               class="form_input"
               id="number_input"
-              pattern="[0-9]{1,10}"
+              pattern="[0-9]{10,12}"
               required
               placeholder="Номер телефона"
             />

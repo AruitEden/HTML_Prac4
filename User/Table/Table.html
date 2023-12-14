@@ -14,7 +14,9 @@
     <header>
       <div class="nav">
         <div class="Logo">
-          <img src="../../Logo.png" alt="Logo" width="60px" />
+          <a href="../../index.html"
+            ><img src="../../Logo.png" alt="Logo" width="60px"
+          /></a>
         </div>
 
         <nav>
@@ -35,25 +37,17 @@
             </li>
             <li name="4"><a href="Table.html#4" class="active">Розклад</a></li>
             <li name="5"><a href="../Comments/Comment.html#5">Відгуки</a></li>
-            <li><a href="#">Нащі співробітники</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <div class="container">
-      <table class="table" id="table">
-        <caption class="table_title">
-          Розклад
-        </caption>
-        <tr>
-          <th>Круїз</th>
-          <th>Лайнер</th>
-          <th>Дата</th>
-          <th>Капітан</th>
-          <th>Вартість</th>
-        </tr>
-      </table>
+      <div class="serch">
+        <input type="text" placeholder="Search" id="serch" />
+      </div>
+
+      <table class="table" id="table"></table>
     </div>
 
     <script src="Table_Js.js"></script>

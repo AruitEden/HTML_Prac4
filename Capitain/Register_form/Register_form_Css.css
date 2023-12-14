@@ -91,3 +91,11 @@
   margin: 10px;
   padding: 10px;
 }
+
+#cond1:checked ~ .card {
+  display: none;
+}
+
+#cond1:checked ~ .card[cond1="true"] {
+  display: flex;
+}

@@ -21,7 +21,7 @@ singInBtn.addEventListener("click", function () {
 const userLoginInput = document.getElementById("login_input");
 const userPasswordInput = document.getElementById("password_input");
 const useNameInput = document.getElementById("name_input");
-const useRoleInput = document.getElementById("sex_input");
+//const useRoleInput = document.getElementById("sex_input");
 const useNumberInput = document.getElementById("number_input");
 
 const submitBtnInput = document.getElementById("sub_input");
@@ -125,7 +125,7 @@ class NewUser {
 let loginRegexp = /[A-Za-z0-9.@]{5,30}/g;
 let passRegexp = /[A-Za-z0-9!@#$%^&*]{6,}/;
 let nameRegexp = /[A-Za-z0-9]{1,30}/g;
-let numRegexp = /[0-9]{1,10}/g;
+let numRegexp = /[0-9]{10,12}/g;
 
 const form2 = document.getElementById("form2");
 
@@ -143,7 +143,7 @@ function registerNewUser() {
         userLoginInput.value,
         userPasswordInput.value,
         useNameInput.value,
-        useRoleInput.value,
+        "user",
         useNumberInput.value
       )
     );
@@ -197,11 +197,11 @@ function FoundUser() {
         }
 
         if (users2[i].role == "capitain") {
-          window.location.href = "./Capitain/Form_table/Form_Table.html";
+          window.location.href = "./Capitain/Main/Main.html";
         }
 
         if (users2[i].role == "admin") {
-          window.location.href = "./User/Table/Table.html#4";
+          window.location.href = "./Admin/Form_employee/Form_employee.html";
         }
 
         form1.reset();

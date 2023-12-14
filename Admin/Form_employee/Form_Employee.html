@@ -14,12 +14,16 @@
     <header>
       <div class="nav">
         <div class="Logo">
-          <img src="../../Logo.png" alt="Logo" width="60px" />
+          <a href="../../index.html">
+            <img src="../../Logo.png" alt="Logo" width="60px" />
+          </a>
         </div>
 
         <nav>
           <ul>
-            <li name="1"><a href="Form_Employee.html">Головна</a></li>
+            <li name="1">
+              <a href="Form_Employee.html" class="active">Головна</a>
+            </li>
             <li name="4">
               <a href="../Table_User/Table_user.html">Таблиця користувачів</a>
             </li>
@@ -123,7 +127,7 @@
               type="tel"
               class="form_input"
               id="number"
-              pattern="[0-9]{1,10}"
+              pattern="[0-9]{10,12}"
               required
               placeholder="Номер телефона"
             />

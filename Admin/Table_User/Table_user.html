@@ -14,7 +14,9 @@
     <header>
       <div class="nav">
         <div class="Logo">
-          <img src="../../Logo.png" alt="Logo" width="60px" />
+          <a href="../../index.html">
+            <img src="../../Logo.png" alt="Logo" width="60px" />
+          </a>
         </div>
 
         <nav>
@@ -23,7 +25,7 @@
               <a href="../Form_employee/Form_Employee.html">Головна</a>
             </li>
             <li name="4">
-              <a href="Table_user.html">Таблиця користувачів</a>
+              <a href="Table_user.html" class="active">Таблиця користувачів</a>
             </li>
           </ul>
         </nav>
@@ -76,7 +78,7 @@
               type="tel"
               class="form_input"
               id="number_input"
-              pattern="[0-9]{1,10}"
+              pattern="[0-9]{10,12}"
               required
               placeholder="Номер телефона"
             />
